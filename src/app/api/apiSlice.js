@@ -2,7 +2,7 @@ import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react'
 import { setCredentials } from '../../features/auth/authSlice'
 
 const baseQuery = fetchBaseQuery({
-    baseUrl: 'http://localhost:3200',
+    baseUrl: 'https://swiftnote.render.com',
     credentials: 'include',
     prepareHeaders: (headers, { getState }) => {
         const token = getState().auth.token
